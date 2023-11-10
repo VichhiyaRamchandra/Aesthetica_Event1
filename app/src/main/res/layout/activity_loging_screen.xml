@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogingScreen">
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<!-- Other Registration Form Fields (e.g., name, email, password) -->
+<EditText
+    android:id="@+id/editTextName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Name"
+    android:inputType="textPersonName"/>
+
+<EditText
+    android:id="@+id/editTextEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextName"
+    android:layout_marginTop="16dp"
+    android:hint="Email"
+    android:inputType="textEmailAddress"/>
+
+<EditText
+    android:id="@+id/editTextPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextEmail"
+    android:layout_marginTop="16dp"
+    android:hint="Password"
+    android:inputType="textPassword"/>
+
+<!-- Google Sign-In Button -->
+<com.google.android.gms.common.SignInButton
+    android:id="@+id/googleSignInButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editTextPassword"
+    android:layout_marginTop="16dp"/>
+
+<!-- Facebook Login Button -->
+
+
+<!-- Registration Button -->
+<Button
+    android:id="@+id/registerButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Register"/>
+
+</RelativeLayout>
+</LinearLayout>
